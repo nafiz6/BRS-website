@@ -14,3 +14,7 @@ css styles are organised in a modular layout:
 - base (Element selectors , Base elements)
 - modules (More discrete components of the page, standalone e.g widgets pop ups etc)
 - layouts (Major and minor styles based of use, e.g headers footers etc)
+
+TODO :
+
+- Need to add jekyll blog for website
