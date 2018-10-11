@@ -17,4 +17,6 @@ css styles are organised in a modular layout:
 
 TODO :
 
-- Need to add jekyll blog for website
+- PHP Blog Site
+- NewsLetter
+- Photo / Video Gallery
