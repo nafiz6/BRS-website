@@ -1,0 +1,126 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #C3CCD5;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+/*-------------
+ * 	Header
+ *------------- */
+ header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	width: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	box-pack: justify;
+	-webkit-justify-content: space-between;
+	-moz-justify-content: space-between;
+	-ms-justify-content: space-between;
+	-o-justify-content: space-between;
+	justify-content: space-between;
+	-ms-flex-pack: justify;
+	align-items: center;
+	color: #fff;
+	padding: 10px 100px 0; }
+	header h2 {
+	  font-family: "Quicksand", sans-serif; }
+	header nav {
+	  display: flex; }
+	  header nav li {
+		margin: 0 15px; }
+		header nav li:first-child {
+		  margin-left: 0; }
+		header nav li:last-child {
+		  margin-right: 0; }
+  
+  @media (max-width: 1000px) {
+	header {
+	  padding: 20px 50px; } }
+  @media (max-width: 800px) {
+	header {
+	  -webkit-box-orient: vertical;
+	  -moz-box-orient: vertical;
+	  box-orient: vertical;
+	  -webkit-box-direction: normal;
+	  -moz-box-direction: normal;
+	  box-direction: normal;
+	  -webkit-flex-direction: column;
+	  -moz-flex-direction: column;
+	  flex-direction: column;
+	  -ms-flex-direction: column; }
+	  header a {
+		margin-bottom: 10px; }
+	  header h2 {
+		margin-bottom: 15px; }
+	  header img {
+		width: 95%; } }
+  @media (max-width: 400px) {
+	nav li {
+	  font-size: 0.8em;
+	  margin: 5px 5px; } }
+	  
+.albums{
+	width: 100%;
+    float: left;
+}
+.albums-inner{
+	width: 1100px;
+	margin-top: 200px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.albums-title {
+	float: left;
+	width: 100%;
+	color: rgba(53,117,159,1);
+	font-size: 20px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: rgba(53,117,159,1);
+	line-height: 50px;
+	margin-bottom: 100px;
+}
+.albums-tab{
+	float: left;
+	width: 300px;
+	margin-right: 100px;
+	margin-bottom: 100px;
+}
+.albums-tab:nth-child(3n+0) {
+	margin-right: 0px;
+}
+
+.albums-tab-thumb{
+	float: left;
+	width: 300px;
+	height: 200px;
+}
+.albums-tab-thumb img {
+	height: auto;
+	width: 290px;
+	background-color: rgba(255,255,255,1);
+	padding: 5px;		
+}
+.albums-tab-text{
+	float: left;
+	width: 100%;
+	text-align: center;
+	color: rgba(53,117,159,1);
+	margin-top: 15px;
+	font-size: 18px;
+}
+.albums-tab-text span {
+	font-size: 14px;
+	color: rgba(102,102,102,1);
+}

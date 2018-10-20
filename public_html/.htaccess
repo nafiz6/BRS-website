@@ -1,0 +1,3 @@
+RewriteEngine    On
+RewriteRule    ^post/([A-Za-z0-9-]+)/?$    post.php?url=$1   [NC,L]
+RewriteRule    ^blog    blog.php   [NC,L]
