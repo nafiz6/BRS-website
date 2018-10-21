@@ -68,9 +68,9 @@
     <header>
         <a href="#"><img src="../assets/img/logo.png" alt="logo"></a>
         <nav>
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="../index.php">Home</a></li>
             <li><a href="../carnival.html">Events</a></li>
-            <li><a href="../blog">Blog</a></li>
+            <li><a href="../blog.php">Blog</a></li>
                 <!-- <li><a href="#">About</a></li> -->
                 <!-- <li><a href="contact.html">Contacts</a></li> -->
         </nav>

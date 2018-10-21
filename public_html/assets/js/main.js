@@ -69,3 +69,48 @@ function myCallback() {
     TweenMax.killTweensOf('#roller');
     $('#BB8').css('transform', 'translateX(-235px) scaleX(-1)');
 }
+
+
+// Prevent reloading on submiit
+
+
+$(document).ready(function(){
+    $(".form-inline").submit(function(event){
+        event.preventDefault();
+
+        var name = $("#subscribe-name").val();
+        var email = $("#subscribe-email").val();
+        var id = $("#subscribe-id").val();
+        var dept = $("#subscribe-dept").val();
+        var phone = $("#subscribe-phone").val();
+        var batch= $("#subscribe-batch").val();
+
+        $(".form-message").load("register.php", {
+
+            email: email,
+            name: name,
+            id: id,
+            dept: dept,
+            phone: phone,
+            batch: batch
+
+        });
+
+
+    });
+
+    $(".news-form").submit(function(event){
+        event.preventDefault();
+
+        var em = $("#newsletter-email").val();
+        console.log(em);
+
+        $(".newsletter-message").load("newsletter.php", {
+
+            email: em
+
+        });
+
+
+    });
+});

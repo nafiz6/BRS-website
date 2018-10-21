@@ -643,7 +643,15 @@ ul.grid {
       font-size: 18px;
       color: #555; }
     .contact form .btn {
-      padding: 18px 42px; }
+      color: #fff;
+      border-radius: 4px;
+      text-transform: uppercase;
+      background-color: #00506D;
+      font-weight: 600;
+      text-align: center;
+      flex: inherit;
+      padding-left: 42px;
+      padding-right: 42px; }
 
 @media (max-width: 800px) {
   .contact form input {

@@ -24,7 +24,7 @@
 
     $latest = mysqli_query(
         $con,
-        "SELECT title, description, medialink, author, DATE_FORMAT(date, '%d %M %Y'), url FROM posts WHERE 1 ORDER BY date DESC LIMIT 4"
+        "SELECT title, description, medialink, author, DATE_FORMAT(date, '%d %M %Y'), url FROM posts WHERE 1 ORDER BY date DESC"
     );
     $num = mysqli_num_rows($latest);
     $popular = mysqli_query(
@@ -43,9 +43,9 @@
     <header>
         <a href="#"><img src="assets/img/logo.png" alt="logo"></a>
         <nav>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="index.php">Home</a></li>
             <li><a href="carnival.html">Events</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="blog.php">Blog</a></li>
                 <!-- <li><a href="#">About</a></li> -->
                 <!-- <li><a href="contact.html">Contacts</a></li> -->
         </nav>
@@ -58,7 +58,7 @@
                 <h1>Latest</h1>
                 <?php
 
-                    for ($x=0;$x<$num;$x++){
+                    for ($x=0;$x<min($num,4);$x++){
                         $row = mysqli_fetch_array($latest);
                 ?>
                 <div class="blog-latest">
@@ -95,7 +95,9 @@
             </div>
 
             <div class="blog-archives-container">
-                <?php if ($num>4){?>
+
+                <?php
+                if ($num>4){?>
 
                 <h1>Archives</h1>
                 <?php
