@@ -453,7 +453,7 @@
 
         <form method="post" action="newsletter.php" id="news-form" class="news-form">
 
-            <input type="email" id="newsletter-email" placeholder="Email" >
+            <input type="email" id="newsletter-email" placeholder="Email" name="email">
             <input type="submit" class="btn"  value="Subscribe now!" >
         </form>
 	</section>
